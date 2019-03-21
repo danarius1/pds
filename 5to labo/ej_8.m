@@ -1,0 +1,10 @@
+Fs=100;
+n=0:Fs-1;
+x=2*cos(2*pi*n*10/Fs);
+r=randn(1,Fs)/1.5;
+xr=x+r;
+figure(1),plot(xr)
+tXR=fft(xr,1024);
+mtXR=abs(tXR);
+f=linspace(0,Fs,1024);
+plot(f,mtXR)

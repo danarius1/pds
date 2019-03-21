@@ -1,0 +1,10 @@
+load mri;
+whos;
+size(D);
+colormap(gray(256));
+subplot(3,2,1),image(D(:,:,1,1));
+subplot(3,2,2),image(D(:,:,1,2));
+subplot(3,2,3),image(D(:,:,1,3));
+subplot(3,2,4),image(D(:,:,1,4));
+subplot(3,2,5),image(D(:,:,1,5));
+subplot(3,2,6),image(D(:,:,1,6));

@@ -1,0 +1,11 @@
+Fs=400;
+t=linspace(0,1,Fs);
+t=linspace(0,1,Fs);
+x=cos(2*pi*t*0.5)+cos(2*pi*t*1.5);
+subplot(1,2,1),stem(t,x)
+L=3;
+M=4;
+xr=resample(x,L,M);
+Fs_n=Fs*L/M;
+t1=linspace(0,1,Fs_n);
+subplot(1,2,2),stem(t1,xr)
